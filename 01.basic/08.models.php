@@ -28,6 +28,12 @@ class ModelName {
 
 // Uso de un modelo dentro de una vista 
 /*
+    Los modelos son accedidos mediante la siguiente sintaxis
+        ModelName::function_name
+*/
+
+
+/*
     use app\Models\ModelName;
 
     Route::get('/', function() {
@@ -36,4 +42,13 @@ class ModelName {
             'content' => ModelName::all()
         ])
     })
+*/
+
+// Una vez obtenida la informacion del modelo, esta puede ser representada a traves de una vista
+
+/*
+    | test.blade.php
+
+    <h1>{{$content['heading']}}</h1>
+    <p>{{$content['info']}}</p>
 */
